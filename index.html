@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecas Flight System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logo">
+                        <!-- <img src="http://icons.iconarchive.com/icons/yingfengling-fl/mac-office/128/paper-plane-icon.png" class="img" alt="logo"> -->
+                        <br>
+                        <br>
+                        <h2> ECAS </h2>
+                    </div>
+                </div>
+
+
+                <!-- <div class="collapse navbar-collapse navbar-right">
+                    <form class="navbar-form">
+                        <input type="text" placeholder="User name">
+                        <input type="password" placeholder="password">
+                        <button type="button" class="btn btn-default">Sign in</button>
+                        <br>
+                       <button type="button" class="btn btn-default navbar-btn"> Create an Account</button>
+                    </form>
+                </div>
+            </div>
+
+        </nav> -->
+
+
+<div class="container main">
+            <h1> Search Flights </h1> <br>
+
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">One way</button>
+                <button type="button" class="btn btn-default">Roundtrip</button>
+            </div>
+            <br><br>
+            <div class="maincontent">
+                <div class="row">
+                    <div class="col-sm-6 col-xm-6 abc">
+                        <!-- <h5> Flying from </h5> -->
+                        <!-- <input type="text" placeholder="City or airport"> -->
+                        <label for="flight">Origin:</label>
+
+                            <select name="flight" id="flight">
+                                <option>Saint Lucia</option>
+                                <option>Martinique</option>
+                                <option>Anguilla (AXA)</option>
+                                <option>Antigua (ANU)</option>
+                                <option>Barbados (BGI)</option>
+                                <option>Canouan</option>
+                                <option>Curacao</option>
+                                <option>Dominica - Melville Hall (DOM)</option>
+                                <option>Grenada (GND)</option>
+                                <option>Guadeloupe (PTP)</option>
+                                <option>Guyana (GEO)</option>
+                                <option>Martinique (FDF)</option>
+                                <option>Nevis (NEV)</option>
+                                <option>San Juan PR (SJU)</option>
+                                <option>Santo Domingo (SDQ)</option>
+                                <option>St. Croix (STX)</option>
+                                <option>St. Kitts (SKB)</option>
+                                <option>St. Lucia - George F. Charles (SLU)</option>
+                                <option>St. Maarten (SXM)</option>
+                                <option>St. Thomas (STT)</option>
+                                <option>Saint Lucia (UVF)</option>
+                                <option>Saint Lucia (SLU)</option>
+                                <option>St. Vincent (SVD)</option>
+                                <option>Tobago (TAB)</option>
+                                <option>Tortola (EIS)</option>
+                            </select>
+                            <br>
+                            <br>
+                    <!-- </div>
+
+                    <div class="col-sm-6 col-xm-6 abc"> -->
+                        <!-- <h5> Flying to </h5> -->
+                        <!-- <input type="text" placeholder="City or airport"> -->
+                        <label for="flight">Destination:</label>
+
+                            <select name="flight" id="flight">
+                                <option>Saint Lucia</option>
+                                <option>Martinique</option>
+                                <option>Anguilla (AXA)</option>
+                                <option>Antigua (ANU)</option>
+                                <option>Barbados (BGI)</option>
+                                <option>Canouan</option>
+                                <option>Curacao</option>
+                                <option>Dominica - Melville Hall (DOM)</option>
+                                <option>Grenada (GND)</option>
+                                <option>Guadeloupe (PTP)</option>
+                                <option>Guyana (GEO)</option>
+                                <option>Martinique (FDF)</option>
+                                <option>Nevis (NEV)</option>
+                                <option>San Juan PR (SJU)</option>
+                                <option>Santo Domingo (SDQ)</option>
+                                <option>St. Croix (STX)</option>
+                                <option>St. Kitts (SKB)</option>
+                                <option>St. Lucia - George F. Charles (SLU)</option>
+                                <option>St. Maarten (SXM)</option>
+                                <option>St. Thomas (STT)</option>
+                                <option>Saint Lucia (UVF)</option>
+                                <option>Saint Lucia (SLU)</option>
+                                <option>St. Vincent (SVD)</option>
+                                <option>Tobago (TAB)</option>
+                                <option>Tortola (EIS)</option>
+                            </select>
+                    </div>
+                </div><br>
+
+                <div class="row form-group">
+                    <div class="col-sm-4 col-xm-6">
+                        <h5> Departure Date</h5>
+                        <input class="glyphicon glyphicon-calendar" type="date" placeholder="mm/dd/yyyy">
+                    </div>
+
+                    <div class="col-sm-4 col-xm-6">
+                        <h5> Return Date </h5>
+                        <input class="glyphicon glyphicon-calendar" type="date" placeholder="mm/dd/yyyy">
+                    </div>
+
+                    <div class="col-sm-4 col-xm-6">
+                        <div class="col-sm-6">
+                            <h5> Adults </h5>
+                            <input type="number" name="points"
+                                   min="0" max="100" step="10" value="1">
+                        </div>
+                        <div class="col-sm-6 abc">
+                            <h5> Children </h5>
+                            <input type="number" name="points"
+                                   min="0" max="100" step="10" value="0">
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+
+                <!-- <a href="#" id="advanced">
+                    <strong>Advanced Options <span class="glyphicon glyphicon-chevron-down"></span></strong>
+                </a><br>
+
+                <br> -->
+                <!-- <div id="choices">
+                    <div id="choiceone">
+                        <label for="sel1">Prefered class</label>
+                        <select class="form-control" id="sel1">
+                            <option>First class</option>
+                            <option>Business</option>
+                            <option>Economic</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div id="choicetwo">
+                        <label class="checkbox-inline"><input type="checkbox" value="">Meal</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="">Wifi</label>
+                    </div>
+
+                </div> -->
+
+
+
+                <br>
+
+                <button type="button" class="btn btn-lg btn-warning">Find Flight </button>
+                <br><br>
+
+
+            </div>
+        </div>
+</div>
+
+<script src="file.js"> 
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body{
+	/* background-image: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/05/airplane-wallpaper-2.jpg); */
+    background-color: greenyellow;
+}
+@media (max-width: 320px) {
+      .main{
+      	width: 100%;
+      }  
+}
+
+#logo {
+	height: auto;
+	background-color: #333;
+	margin-top: 20px;
+	color: #fff;
+}
+.logo h2{
+	margin-top: -20px; 
+	color:#00a9c6; 
+	text-decoration:initial;
+}
+.logo a:hover{
+	text-decoration: initial;
+} 
+.accountlogo{
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.main{
+	max-width:80%;
+	margin: 0 auto;
+	background-color: #006600;
+	color: white;
+	margin-top: 40px;
+	box-shadow: 10px 10px 5px black;
+
+}
+.maincontent input {
+	color: #333;
+	}
+
+.logo a:hover{
+	text-decoration: initial;
+}
+.maincontent{
+	float: left;
+	
+}
+#choices{
+  display: none;
+}
+
+#flight{
+    color:black;
+}
